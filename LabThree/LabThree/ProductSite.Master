@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProductSite.Master.cs" Inherits="LabThree.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        nav {
+            display: flex;
+            width: 100%;
+            float: left;
+        }
+        dl {
+            padding-top: 25px;
+            text-align: center;
+        }
+        dt {
+            display: inline;
+            padding: 25px;
+        }
+        a {
+            color: #303030;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="display: flex; justify-content: center; background-color: #0057ad;">
+            <asp:Image ID="Image1" runat="server" Height="61px" Width="180px" ImageUrl="~/img/IKEA.png"/>
+        </div>
+        <div>
+            <dl>
+                <dt><a href="ProductHomePage.aspx">Home</a></dt>
+                <dt><a href="ProductDBPage.aspx">Product Page</a></dt>
+                <dt><a href=""></a>...</dt>
+                <dt><a href=""></a>...</dt>
+                <dt><a href=""></a>...</dt>
+            </dl>
+        </div>
+        <div style="padding-bottom: 15px;"></div>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
